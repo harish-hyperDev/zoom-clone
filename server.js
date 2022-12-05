@@ -20,7 +20,7 @@ io.on('connection', socket => {
     console.log('connected to io')
     socket.on('join-room', (roomId, userId) => {
         socket.join(roomId)
-        socket.emit('user-connected', userId)
+        socket.to(roomId).emit('user-connected', userId)
     })
 })
 
