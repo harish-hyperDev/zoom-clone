@@ -17,9 +17,10 @@ app.get('/:room', (req,res) => {
 })
 
 io.on('connection', socket => {
+    console.log('connected to io')
     socket.on('join-room', (roomId, userId) => {
         socket.join(roomId)
-        socket.broadcast.to(roomId).emit('user-connected', userId)
+        socket.emit('user-connected', userId)
     })
 })
 

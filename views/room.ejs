@@ -20,12 +20,14 @@
             const ROOM_ID = "<%= roomId %>"
         </script>
         <script src="/socket.io/socket.io.js"></script>
-        <script>
-          const socket = io();
-        </script>
-        <script src="/script.js" defer></script>
+        <!-- <script>
+          const socket = io('/');
+        </script> -->
+        <script src="/script.js" ></script>
     </head>
     <body>
-        <div id="video-grid"></div>
+        <div id="video-grid">
+            <div><%= roomId %></div>
+        </div>
     </body>
  </html>
