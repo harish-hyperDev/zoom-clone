@@ -1,6 +1,6 @@
 # Video Streaming App
 
-### This app is made for streaming video of the connected machines via peer to peer connection.
+This app is made for streaming video of the connected machines via peer to peer connection.
 
 ### App made with Node.js 😌🚀
 <br />
